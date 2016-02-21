@@ -1,0 +1,13 @@
+package jeff.proto;
+
+option java_package = "com.bluecatcode.jeff.proto";
+option java_outer_classname = "JeffProtos";
+
+message Event {
+    enum Type {
+        UNKNOWN = 0;
+    }
+
+    required Type type = 1;
+    required string message = 2;
+}
