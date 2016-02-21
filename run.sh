@@ -2,11 +2,12 @@
 
 # https://github.com/os72/protoc-jar
 
-PROTOC=protoc-jar-2.6.1.4.jar
+VERSION=2.6.1.4
+PROTOC=protoc-jar-${VERSION}.jar
 
 if [ ! -f ${PROTOC} ]; then
     echo "File ${PROTOC} not found. Downloading.."
-    wget http://central.maven.org/maven2/com/github/os72/protoc-jar/2.6.1.4/protoc-jar-2.6.1.4.jar
+    wget http://central.maven.org/maven2/com/github/os72/protoc-jar/${VERSION}/protoc-jar-${VERSION}.jar
 fi
 
 usage () {
