@@ -1,4 +1,4 @@
-protobuf-*/
+out/
 
 *~
 *.log
@@ -6,6 +6,10 @@ protobuf-*/
 *.tmp
 *.swp
 *.lock
+
+# Gradle
+.gradle
+build
 
 # Packages
 *.jar
